@@ -1,33 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
     <script async src="./js/modernizr-custom.js"></script>
-    <title>Eazy Camper Landing page</title>
+    <title>Easy Camper Landing page</title>
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
-        <div class="header_img">
-            <picture>
-            <source srcset="./img/bg.webp" type="image/webp" />
-            <source srcset="./img/bg.png" type="image/png" />
-            <img src="./img/bg.png" class="header-bg-img" alt="people in room" width="1" height="1" loading="lazy" decoding="async" />   
-            </picture>
-        <div class="header-cube"></div>
-        <div class="header-user-entry"></div>
-        <div class="header-section-head">
-        <h1 class="header-title"></h1>
-        <p class="header-text"></p>    
-         <button class="header-btn">Explore</button>   
-        </div>
-        </div>
+        <div class="container">
+            <div class="header-nav">
+                <a href="#"><img src="./img/logo.svg" class="logo" alt="logo" width="1" height="1" loading="lazy"
+                        decoding="async"></a>
+                    <div class="dropdown-menu">
+                        <button class="dropdown-button">
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="far fa-user"></i>
+                        </button>
+                <ul class="navbar">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contacts">contacts</a></li>
+            </ul>
+                    </div>
+            </div>
         </div>
     </header>
+    <section class="hero">
+        <div class="hero-section-img">
+            <picture>
+                <source srcset="./img/bg.webp" type="image/webp" />
+                <source srcset="./img/bg.png" type="image/png" />
+                <img src="./img/bg.png" class="hero-img" alt="women" width="2" height="1" loading="lazy"
+                    decoding="async" />
+            </picture>
+        </div>
+        <div class="container">
+            <div class="hero-section-head">
+                <h1 class="hero-title">Find out how we can <span class="color-text">save your time </span>in Backpacking
+                    in Europe</h1>
+                <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet id eget
+                    scelerisque amet etiam in sit commodo. Pretium ut duis orci pulvinar pretium id consectetur. </p>
+                <button class="hero btn">Explore</button>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="services-wrap">
+                <div class="services-card">
+                    <img src="./img/girl.png" alt="girl" width="1" height="1" loading="lazy" class="services-img"
+                        decoding="async" />
+                    <h3 class="services-title">Promoting your territory towards foreign tourists</h3>
+                    <p class="services-text">EasyCamper wants to promote the excellence of Italian food and wine, art,
+                        culture and the economy.</p>
+                    <a href="#" class="text-color">Discover the places linked to your area that you can link to your
+                        structure</a>
+                </div>
+                <div class="services-card">
+                    <img src="./img/tourism.png" alt="tourism" width="1" height="1" loading="lazy" class="services-img"
+                        decoding="async" />
+                    <h3 class="services-title">Additional services designed for the needs of campers</h3>
+                    <p class="services-text">Travelling often means that you dont have time to organise excursions along
+                        your route.EasyCamper takes care of that!</p>
+                    <a href="#" class="text-color">Discover the places linked to your area that you can link to your
+                        structure</a>
+                </div>
+                <div class="services-card">
+                    <img src="./img/men.png" alt="men" width="1" height="1"" loading=" lazy" class="services-img"
+                        decoding="async" />
+                    <h3 class="services-title">Free online showcase with promotion in Italy and abroad</h3>
+                    <p class="services-text">Forget about the time and money spent on creating your own website or
+                        e-commerce system for bookings. </p>
+                    <a href="#" class="text-color">Easycamper creates your showcase. Discover the terms and conditions
+                        for joining the Network</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="priority">
+        <div class="container">
+            <h2 class="priority-main-title">Making your facility known is our priority</h2>
+            <div class="priority-wrap">
+                <div class="priority-card">
+                    <img src="./img/List.svg" alt="list" width="1" height="1" loading="lazy" class="icons"
+                        decoding="async" />
+                    <h3 class="priority-title">Choose the type of stop</h3>
+                    <p class="priority-text">Select the type of stopover you are ordering from Equipped Area, Camping
+                        and Agricamping</p>
+                    <a href="#" class="text-color">Show me more</a>
+                </div>
+                <div class="priority-card">
+                    <img src="./img/Letter.svg" alt="letter" width="1" height="1" loading="lazy" class="icons"
+                        decoding="async" />
+                    <h3 class="priority-title">Describe your structure</h3>
+                    <p class="priority-text">Describe thee property, location and nearby attractions</p>
+                    <a href="#" class="text-color">Show me more</a>
+                </div>
+                <div class="priority-card">
+                    <img src="./img/Vector.svg" alt="vector" width="1" height="1" loading="lazy" class="icons"
+                        decoding="async" />
+                    <h3 class="priority-title">Build your showcase</h3>
+                    <p class="priority-text">Add photos, videos and descriptions Define the price of each type of that
+                        make your propety truly </p>
+                    <a href="#" class="text-color">Show me more</a>
+                </div>
+                <div class="priority-card">
+                    <img src="./img/Calendar.svg" alt="calendar" width="32" height="32" loading="lazy" class="icons"
+                        decoding="async" />
+                    <h3 class="priority-title">Prices and Availability</h3>
+                    <p class="priority-text">pitch and configure the availablity calendar.</p>
+                    <a href="#" class="text-color">Show me more</a>
+                </div>
+            </div>
+    </section>
+    <section class="community">
+        <div class="container">
+            <div class="community-wrap">
+                <div class="community-about">
+                    <h2 class="community-title">Join the community campervan sites managers.</h2>
+                    <p class="community-text">Discover all the equibbed areas in Italy. Find the shop with all the
+                        services for you and your camper.</p>
+                    <button class="community btn">Start</button>
+                </div>
+                <div class="community-gallery-wrap">
+                    <div class="community-gallery">
+                        <img src="./img/Lucciano.png" alt="Lucciano" width="1" height="1" loading="lazy"
+                            class="gallery-img" decoding="async" />
+                        <h3 class="community-gallery-title">Lucciano</h3>
+                        <p class="community-gallery-text">Rome</p>
+                        <a href="#" class="community-link">View the site</a>
+                    </div>
+                    <div class="community-gallery">
+                        <img src="./img/Cremonesi.png" alt="Cremonesi" width="1" height="1" loading="lazy"
+                            class="gallery-img" decoding="async" />
+                        <h3 class="community-gallery-title">Cremonesi</h3>
+                        <p class="community-gallery-text">Florence</p>
+                        <a href="#" class="community-link">View the site</a>
+                    </div>
+                    <div class="community-gallery">
+                        <img src="./img/Beneventi.png" alt="Beneventi" width="1" height="1" loading="lazy"
+                            class="gallery-img" decoding="async" />
+                        <h3 class="community-gallery-title">Beneventi</h3>
+                        <p class="community-gallery-text">Venice</p>
+                        <a href="#" class="community-link">View the site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantage">
+        <div class="container">
+            <h2 class="advantage-main-title">Our Advantages</h2>
+            <div class="advantage-wrap">
+                <div class="advantage-card">
+                    <img src="./img/Highlight.svg" alt="list" width="1" height="1" loading="lazy" class="icons"
+                        decoding="async" />
+                    <h3 class="advantage-title">Convenience and Transparency</h3>
+                    <p class="priority-text">You don’t have to find out later or only after
+                        camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin
+                        a fixed commission on each transaction of 5</p>
+                </div>
+                <div class="advantage-card">
+                    <img src="./img/library_books.svg" alt="letter" width="1" height="1" loading="lazy" class="icons"
+                        decoding="async" />
+                    <h3 class="advantage-title">Digital marketing and editorial support</h3>
+                    <p class="advantage-text">You don’t have to find out later or only after
+                        camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin
+                        a fixed commission on each transaction of 5</p>
+                </div>
+                <div class="advantage-card">
+                    <img src="./img/search.svg" alt="vector" width="1" height="1" loading="lazy" class="icons"
+                        decoding="async" />
+                    <h3 class="advantage-title">Digital marketing and editorial support</h3>
+                    <p class="advantage-text">You don’t have to find out later or only after
+                        camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin
+                        a fixed commission on each transaction of 5</p>
+                </div>
+            </div>
+    </section>
+    <footer class="footer">
+        <div class="footer container">
+            <div class="footer-about-wrap">
+                <div class="footer-about">
+                    <h3 class="footer-title">Easy Camper</h3>
+                    <p class="footer-text">When Passion Meets Comfort.</p>
+                </div>
+                <div class="footer-nav-wrap">
+                    <div class="footer-nav">
+                        <h3 class="footer-nav-title">Discover the Network</h3>
+                        <ul class="footer-nav-text">
+                            <li><a href="#">Where to shop</a></li>
+                            <li><a href="#">Tour Guided</a></li>
+                            <li><a href="#">Our Tours</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav">
+                        <h3 class="footer-nav-title">Become a Manager</h3>
+                        <ul class="footer-nav-text">
+                            <li><a href="#">Join your Pairing</a></li>
+                            <li><a href="#">Offer your Service</a></li>
+                            <li><a href="#">Are you a guide?</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav">
+                        <h3 class="footer-nav-title">Assistance</h3>
+                        <ul class="footer-nav-text">
+                            <li><a href="#">Support Center</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Cancallation Options</a></li>
+                            <li><a href="#">Reliablity and Sequrity</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <section class="copyright">
+        <div class="copyright container">
+            <div class="lines"></div>
+            <div class="copyright-wrap">
+                <p class="copyright-text">EazyCamper. All rights reserved.</p>
+                <ul class="copyright-nav-text">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Teams</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
