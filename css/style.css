@@ -290,8 +290,13 @@ left: 0;
 .header-nav{
 display: flex;
 justify-content: space-between;
-align-items: center;
-padding: 40px 0;
+padding-top: 40px;
+}
+/*=====Dropdown button styles===========*/
+
+.dropdown-menu{
+position: relative;
+display: inline-flex;
 }
 .dropdown-button{
 width:85px ;
@@ -302,30 +307,38 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-.fa-user{
-color: var(--light-color);
-background-color:var(--primary-color);
+.chevron-down{
+width: 11px;
+height: 7px;
+margin-right: 5px;
+}
+.user-icon{
 width: 32px;
 height: 32px;
-border-radius: 32px;
-align-items: center;
 }
 .navbar{
+position: absolute;
 visibility:  hidden;
-}
-.navbar>li{
+top: 50px;
+right:60px;
+border-radius: 25px;
+background-color:var(--light-color);
+transition: 0.3s;
+} 
+.navbar li{
 min-width: 120px;
-padding: 15px;
+max-height: 30px;
+padding: 20px;
 display: flex;
 gap: 10px;
-text-align: center;
-border-radius: 15px; 
-background-color:var(--light-color);
+justify-content: center;
+align-items: center;
+
 }
-.dropdown-button:hover >.navbar>li{
+.dropdown-menu:hover .navbar{
  visibility: visible;
-}
-.navbar>li:hover{
+} 
+.navbar li:hover{
 color: var(--primary-color); 
 text-shadow: 0.3px 0 0, -0.3px 0 0, 0 0.3px 0, 0 -0.3px 0;
 }
