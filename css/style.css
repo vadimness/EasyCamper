@@ -445,12 +445,11 @@ flex-grow: 1;
 }
 .community-about{
 width: 325px;
-margin-right: 25px;
 }
 .community-title{
 font-family: 'Merriweather';
 font-size: 36px;
-flex-wrap: 700;
+font-weight: 700;
 margin-bottom: 32px;
 color: var(--dark-color);
 }
@@ -461,15 +460,17 @@ margin-bottom: 65px;
 color: var(--dark-color);
 }
 .play-icon{
-	width:10px;
-	height:12px;
-	margin-right: 5px;
+width:10px;
+height:12px;
+margin-right: 5px;
 }
 .community-gallery-wrap{
 display: flex;
+justify-content: space-between;
+width: 60%;
 }
 .community-gallery{
-margin-left: 50px;
+
 }  
 .gallery-img{
 width: 230px;
@@ -560,7 +561,7 @@ padding: 8px 8px 8px 0;
 }
 .footer-nav-text>li:hover{
 color: var(--primary-color);
-transition: 3s;
+transition: 0.3s;
 }
 /* Copyright-section */
 .lines::after{
@@ -588,5 +589,39 @@ padding:0px 15px 0px 15px;
 }
 .copyright-nav-text>li:hover{
 color: var(--primary-color);
-transition: 3s;
+transition: 0.3s;
 }
+
+/* ==== Start Media Query */
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+	.container {
+	  max-width: 960px;
+	  padding: 0 15px;
+	}
+	.img {
+	  width: 200px;
+	}
+  /* Medium devices (tablets, less than 992px) */
+  @media (max-width: 991.98px) {
+	.container {
+	  max-width: 720px;
+	}
+}
+  /* Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767.98px) {
+	
+	.container {
+	  max-width: 540px;
+	}
+}
+  
+  /* X-Small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+  .container {
+  max-width: 100%;
+  padding: 0 15px;
+  }
+
+  }
+  /*====End Media Queries====*/
