@@ -211,7 +211,7 @@ table {
 :root {
 --light-color: #fff;
 --dark-color: #000;
---primary-color:#e45231;
+--primary-color:#eb6142;
 --secondary-color:#f7f7f7;
 }
 body {
@@ -262,9 +262,9 @@ body {
 	transition: 0.3s;
   }
   .btn:hover {
-	color: var(--dark-color);
-	background: transparent;
-	border: 2px solid var(--dark-color);
+	color: var(--light-color);
+	background: #fc623f;
+	transition: 0.3s;
   }
   .icons{
   width: 32px;
@@ -275,6 +275,10 @@ body {
 width: 100%;
 max-width: 1240px;
 margin: 0 auto;
+}
+.wrap{
+display: flex;
+justify-content: space-between;
 }
 /* Header */
 .logo {
@@ -381,7 +385,7 @@ padding-bottom: 29px;
  }
  /* Services */
 .services{
-padding: 120px 0 120px;
+padding: 130px 0;
 }
 .services-wrap{
 display: flex;
@@ -417,15 +421,10 @@ flex-grow: 1;
 	padding: 120px 0;
 }
 .priority-main-title{
-	font-family: 'Merriweather';
-	font-size: 36px;
-	font-weight: 700;
-	color: var(--dark-color);
-	margin-bottom: 112px;
-}
-.priority-wrap{
-display: flex;
-justify-content: space-between;
+font-family: 'Merriweather';
+font-size: 36px;
+font-weight: 700;
+color: var(--dark-color);
 }
 .priority-card{
 width: 270px;
@@ -444,17 +443,12 @@ margin-bottom: 16px;
 flex-grow: 1;
 }
 /* Community-section */
-.community-wrap{
- display: flex;
- justify-content: center;
- width: 100%;
+.community{
+	padding: 120px 0;
 }
 .community-about{
-<<<<<<< HEAD
-width: 28%;
-=======
-width: 325px;
->>>>>>> ffe908fc56ea1dc27ee3bfba75dcea023ce44418
+width: 450px;
+margin-right: 125px;
 }
 .community-title{
 font-family: 'Merriweather';
@@ -475,20 +469,8 @@ height:12px;
 margin-right: 5px;
 }
 .community-gallery-wrap{
-display: flex;
-<<<<<<< HEAD
-justify-content: space-around;
-width: 72%;
+width: 100%;
 }
-
-=======
-justify-content: space-between;
-width: 60%;
-}
-.community-gallery{
-
-}  
->>>>>>> ffe908fc56ea1dc27ee3bfba75dcea023ce44418
 .gallery-img{
 width: 230px;
 height: 418px;
@@ -519,11 +501,6 @@ font-family: 'Merriweather';
 font-size: 36px;
 font-weight: 700;
 color: var(--dark-color);
-margin-bottom: 110px;
-}
-.advantage-wrap{
-display: flex;
-justify-content: space-between;
 }
 .advantage-card{
 width: 386px;
@@ -543,14 +520,14 @@ margin-bottom: 16px;
 .footer{
 width: 100%;
 background-color: var(--secondary-color);
-padding: 96px 0;
 }
 .footer-about{
-width: 27%;
+width: 260px;
 }
 .footer-about-wrap{
 display: flex;
 justify-content: space-between;
+padding: 96px 0 85px;
 }
 .footer-title{
 font-family:'Merriweather';
@@ -563,16 +540,11 @@ font-family:'Merriweather';
 font-size: 48px;
 font-weight: 700;
 }
-.footer-nav-wrap{
-	display: flex;
-	justify-content: space-between;
-	width: 60%;
-}
 .footer-nav-title{
 font-family:'Merriweather';
 font-size: 18px;
 font-weight: 700;
-margin-bottom: 26px;	
+margin-bottom: 16px;
 }
 .footer-nav-text>li{
 padding: 8px 8px 8px 0;
@@ -589,18 +561,16 @@ transition: 0.3s;
 	opacity: 0.2;
 	border-bottom:1px solid var(--dark-color);
 }
-.copyright{
-width: 100%;
-background: var(--secondary-color);
-}
 .copyright-wrap{
 display: flex;
+justify-content: space-between;
 padding: 28px 0 63px;
+}
+.normal-style{
+font-weight: 400;
 }
 .copyright-nav-text{
 display: flex;
-width: 80%;
-justify-content: flex-end;
 }
 .copyright-nav-text>li{
 padding:0px 15px 0px 15px;
@@ -611,21 +581,15 @@ transition: 0.3s;
 }
 
 /* ==== Start Media Query */
-<<<<<<< HEAD
 /* XX-Large devices (desktops, less than 1400px) */
-@media (max-width:1399.98px){
-	.container{
-		padding: 0 15px;
-	}
-}	
-=======
->>>>>>> ffe908fc56ea1dc27ee3bfba75dcea023ce44418
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 	.container {
 	  max-width: 960px;
-<<<<<<< HEAD
-	  padding: 0 20px;
+	}
+	.wrap{
+		flex-wrap: wrap;
 	}
 	.hero-section-head{
 	max-width: 720px;
@@ -647,29 +611,20 @@ transition: 0.3s;
 	}
 	.community-about {
 		width: 100%;
-	}
-	.community-wrap{
+		margin-right: 0;
 		flex-wrap: wrap;
 	}
 	.community-gallery-wrap{
-		margin-top:100px;
-		flex:1;
+		margin-top: 120px;
 	}
 }
-=======
-	  padding: 0 15px;
-	}
-	.img {
-	  width: 200px;
-	}
->>>>>>> ffe908fc56ea1dc27ee3bfba75dcea023ce44418
   /* Medium devices (tablets, less than 992px) */
   @media (max-width: 991.98px) {
 	.container {
 	  max-width: 720px;
 	}
-<<<<<<< HEAD
-
+	.advantage-card {
+	width: 30%;
 }
   /* Small devices (landscape phones, less than 768px) */
   @media (max-width: 767.98px) {
@@ -678,16 +633,6 @@ transition: 0.3s;
 	  max-width: 540px;
 	}
 }
-=======
-}
-  /* Small devices (landscape phones, less than 768px) */
-  @media (max-width: 767.98px) {
-	
-	.container {
-	  max-width: 540px;
-	}
-}
->>>>>>> ffe908fc56ea1dc27ee3bfba75dcea023ce44418
   
   /* X-Small devices (portrait phones, less than 576px) */
   @media (max-width: 575.98px) {
@@ -697,8 +642,4 @@ transition: 0.3s;
   }
 
   }
-<<<<<<< HEAD
   /*====End Media Queries====*/
-=======
-  /*====End Media Queries====*/
->>>>>>> ffe908fc56ea1dc27ee3bfba75dcea023ce44418
