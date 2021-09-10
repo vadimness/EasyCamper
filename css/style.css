@@ -520,14 +520,10 @@ margin-bottom: 16px;
 .footer{
 width: 100%;
 background-color: var(--secondary-color);
+padding: 96px 0 85px;
 }
 .footer-about{
-width: 260px;
-}
-.footer-about-wrap{
-display: flex;
-justify-content: space-between;
-padding: 96px 0 85px;
+width: 240px;
 }
 .footer-title{
 font-family:'Merriweather';
@@ -563,7 +559,7 @@ transition: 0.3s;
 }
 .copyright-wrap{
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 padding: 28px 0 63px;
 }
 .normal-style{
@@ -625,6 +621,14 @@ transition: 0.3s;
 	}
 	.advantage-card {
 	width: 30%;
+}
+.footer-text{
+	font-size: 34px;
+	margin: 15px 0 55px;
+}
+.footer-nav-text>li{
+	padding: 12px 12px 12px 0;
+	}
 }
   /* Small devices (landscape phones, less than 768px) */
   @media (max-width: 767.98px) {
