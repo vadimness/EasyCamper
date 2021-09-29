@@ -372,13 +372,11 @@ object-fit: cover;
  }
 .hero-title{
 font-family: "Merriweather";
-width:521px;
 font-size: 39px;
 font-weight: 700;
 padding-bottom: 29px;
  }
  .hero-text{
- width: 515px;
  font-size: 20px;
  font-weight: 500;
  padding-bottom: 29px;
@@ -386,10 +384,6 @@ padding-bottom: 29px;
  /* Services */
 .services{
 padding: 130px 0;
-}
-.services-wrap{
-display: flex;
-justify-content: space-between;
 }
 .services-img{
 object-fit: cover;
@@ -635,6 +629,29 @@ transition: 0.3s;
 	
 	.container {
 	  max-width: 540px;
+	}
+	.hero-img {
+		height: 400px;
+		object-fit: cover;
+		object-position: right;
+	}
+	.hero-section-head{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		padding: 50px;
+	}
+	.hero-title{
+		font-size: 30px;
+	}
+
+	.services-card {
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	}
+	.services-card:not(:first-child){
+		margin-top:40px;
 	}
 }
   
